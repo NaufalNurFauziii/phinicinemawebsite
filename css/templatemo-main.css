@@ -457,6 +457,8 @@ section {
   padding-right: 15px;
   padding-top: 25vh;
   background-image: url(../img/contactbg.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .contact-form {
@@ -819,13 +821,13 @@ section {
 
 
 @media (max-width: 767px){
-  
+  /* home section */
   .baner-content {
     padding-top: 30vh;
   }
 
   .baner-content h1 {
-    font-size: 64px;
+    font-size: 32px;
   }
 
   .baner-content span {
@@ -836,9 +838,27 @@ section {
     margin-top: 15px;
   }
 
+  .baner-content .first-content img {
+    width: 300px;
+    height: auto;
+  }
+
+  /* service section */
   .service-content {
     padding-top: 5vh;
     text-align: center;
+  }
+  .service-content .container h4 {
+    font-size: 22px;
+  }
+
+  .service-content .container .primary-button {
+    display: none;
+  }
+  
+  .service-content .left-text {
+    margin: 0px;
+    margin-bottom: 30px;
   }
 
   .service-content .left-text .line-dec {
@@ -858,14 +878,253 @@ section {
     text-align: center;
     color: #fff;
     margin-bottom: 30px;
+    height : auto;
+  }
+
+  /* portofilio section */
+  .projects-content {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    min-height: auto;
+
+  }
+  .owl-pagination {
+    padding: 0px 60px;
+    margin-top: 10px;
+  }
+
+  /* detail services section */
+  .tabs-content {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+  /* contact section */
+  .contact-content {
+    min-height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .contact-form {
+    margin-bottom: 0px;
+  }
+  /* footer section */
+  .footer {
+    padding: 7%;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-brand {
+    width: 100%;
+  }
+
+  .footer-logo {
+    width: 120px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .footer h4 {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .footer-menu ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-menu ul li a {
+    font-size: 13px;
+  }
+
+  .footer-contact p {
+    font-size: 13px;
+  }
+
+  .partners {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* lightbox section */
+  .lightbox {
+    padding-top: 20vh;
+    padding-bottom: 30vh;
+  }
+
+  /* detail services */
+  .baner-content-dok-event {
+    min-height: auto;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  .baner-content-dok-event .first-content h1{
+    font-size: 20px;
+  }
+  .baner-content-dok-event .first-content p{
+    font-size: 15px;
+  }
+
+  .baner-content-dok-trip {
+    min-height: auto;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+  .baner-content-dok-trip .first-content h1{
+    font-size: 20px;
+  }
+  .baner-content-dok-trip .first-content p{
+    font-size: 15px;
+  }
+
+  .baner-content-prewed {
+    min-height: auto;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+  .baner-content-prewed .first-content h1{
+    font-size: 20px;
+  }
+  .baner-content-prewed .first-content p{
+    font-size: 15px;
+  }
+
+  .baner-content-dok-food {
+    min-height: auto;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+  .baner-content-dok-food .first-content h1{
+    font-size: 20px;
+  }
+  .baner-content-dok-food .first-content p{
+    font-size: 15px;
+  }
+  .baner-content-dok-food .first-content ul {
+    font-size: 15px;
+  }
+
+  .baner-content-dok-interior-page {
+    min-height: auto;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+  }
+  .baner-content-dok-interior-page .first-content h1{
+    font-size: 20px;
+  }
+  .baner-content-dok-interior-page .first-content p{
+    font-size: 15px;
+  }
+
+  .baner-content-dok-video-page {
+    min-height: auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .baner-content-dok-video-page .first-content h1{
+    font-size: 20px;
+  }
+  .baner-content-dok-video-page .first-content p{
+    font-size: 15px;
+  }
+  .baner-content-dok-video-page .first-content ul {
+    font-size: 15px;
   }
 
 }
 
-@media (min-width: 1200px) {
+
+
+@media (max-width: 1200px) {
   .container {
     max-width: 1170px;
   }
+  .container .first-content img {
+    width: 300px;
+    height: auto; 
+  }
+  .service-content {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  .projects-content {
+    padding-top: 15vh;
+    /* margin-top: 5vh; */
+    padding-bottom: 15vh;
+    min-height: 100vh;
+  }
+  .tabs-content {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  .contact-content {
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    background-size: contain;
+  }
+  /* detail services */
+  .baner-content-dok-event {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+  }
+  .baner-content-dok-event .first-content {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+  }
+
+  .baner-content-dok-trip {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .baner-content-dok-trip .first-content {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .baner-content-prewed {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .baner-content-prewed .first-content {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .baner-content-dok-food {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .baner-content-dok-food .first-content {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .baner-content-dok-interior-page {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .baner-content-dok-interior-page .first-content {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+  }
+  .baner-content-dok-video-page {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .baner-content-dok-video-page .first-content {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
 }
 
 /* LIGHT BOX */
