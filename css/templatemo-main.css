@@ -819,7 +819,7 @@ section {
   color: #000;
 }
 
-
+/* mobile responsive */
 @media (max-width: 767px){
   /* home section */
   .baner-content {
@@ -964,8 +964,8 @@ section {
   /* detail services */
   .baner-content-dok-event {
     min-height: auto;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 0vh;
+    padding-bottom: 1vh;
   }
   .baner-content-dok-event .first-content h1{
     font-size: 20px;
