@@ -184,7 +184,7 @@ a:hover { color: #FF0; }
 .baner-content {
   padding-top: 25vh;
   text-align: center;
-  background-image: url(../img/homefix.jpg);
+  background-image: url(../img/homefix.jpeg);
 }
 
 .baner-content h1 {
@@ -301,7 +301,7 @@ h4, .h4 {
 
 .projects-content {
   padding-top: 18vh;
-  background-image: url(../img/porfofoliobgrblur.jpg);
+  background-image: url(../img/porfofoliobgrblur.jpeg);
 }
 
 .projects-content .item img {
@@ -355,7 +355,7 @@ h4, .h4 {
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 10vh;
-  background-image: url(../img/slide4.jpg);
+  background-image: url(../img/slide4.jpeg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -456,7 +456,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 25vh;
-  background-image: url(../img/contactbg.jpg);
+  background-image: url(../img/contactbg.jpeg);
   background-size: cover;
   background-position: center center;
 }
@@ -1044,7 +1044,7 @@ section {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .container {
     max-width: 1170px;
   }
@@ -1070,6 +1070,9 @@ section {
     padding-top: 25vh;
     padding-bottom: 25vh;
     background-size: contain;
+  }
+  .service-content .primary-button{
+    display: none;
   }
   /* detail services */
   .baner-content-dok-event {
