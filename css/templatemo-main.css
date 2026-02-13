@@ -228,6 +228,7 @@ a:hover { color: #FF0; }
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 5vh;
+  padding-bottom: 5vh;
   background-image: url(../img/slide2.1.jpeg);
   background-attachment: fixed;
   min-height: 100vh;
@@ -301,7 +302,7 @@ h4, .h4 {
 
 .projects-content {
   padding-top: 18vh;
-  background-image: url(../img/porfofoliobgrblur.jpeg);
+  background-image: url(../img/portofoliobg2.jpg);
 }
 
 .projects-content .item img {
@@ -355,7 +356,7 @@ h4, .h4 {
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 10vh;
-  background-image: url(../img/slide4.jpeg);
+  background-image: url(../img/slide42.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -395,7 +396,6 @@ h4, .h4 {
   margin-bottom: 30px;
   letter-spacing: 1px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.25);
-}
 }
 
 section {
@@ -450,16 +450,19 @@ section {
   display:table;
   clear:both;
 }
-
+.baner-content {
+  padding-top: 25vh;
+  text-align: center;
+  background-image: url(../img/homefix.jpeg);
+}
 
 .contact-content {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 25vh;
-  background-image: url(../img/contactbg.jpeg);
-  background-size: cover;
-  background-position: center center;
+  min-height: 100vh;
+  padding: 25vh 15px 100px;
+  background-image: url("../img/contactbg2.jpg");
+
 }
+
 
 .contact-form {
   background-color: rgba(0, 0, 0, 0.5);
@@ -603,7 +606,7 @@ section {
 .baner-content-prewed {
   padding-top: 15vh;
   text-align: center;
-  background-image: url(../img/loccal/13.jpeg);
+  background-image: url(../img/wedding/2.jpeg);
 }
 
 .baner-content-prewed h1 {
@@ -839,7 +842,7 @@ section {
   }
 
   .baner-content .first-content img {
-    width: 300px;
+    width: 200px;
     height: auto;
   }
 
@@ -883,14 +886,15 @@ section {
 
   /* portofilio section */
   .projects-content {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     min-height: auto;
 
   }
   .owl-pagination {
     padding: 0px 60px;
     margin-top: 10px;
+    display: none;
   }
 
   /* detail services section */
@@ -1049,7 +1053,7 @@ section {
     max-width: 1170px;
   }
   .container .first-content img {
-    width: 300px;
+    width: 250px;
     height: auto; 
   }
   .service-content {
