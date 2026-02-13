@@ -1,3 +1,51 @@
+.baner-content .first-content {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: firstContentFadeIn 1.1s cubic-bezier(0.23, 1, 0.32, 1) 0.2s forwards;
+}
+
+@keyframes firstContentFadeIn {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.baner-content .first-content img {
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  animation: firstImgIn 1s cubic-bezier(0.23, 1, 0.32, 1) 0.4s forwards;
+}
+
+@keyframes firstImgIn {
+  0% { opacity: 0; transform: translateY(30px) scale(0.98); }
+  80% { opacity: 1; transform: translateY(-8px) scale(1.03); }
+  100% { opacity: 1; transform: none; }
+}
+
+.baner-content .first-content h1 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: firstH1In 1s cubic-bezier(0.23, 1, 0.32, 1) 0.7s forwards;
+}
+
+@keyframes firstH1In {
+  0% { opacity: 0; transform: translateY(30px); }
+  80% { opacity: 1; transform: translateY(-8px); }
+  100% { opacity: 1; transform: none; }
+}
+
+.baner-content .first-content .primary-button {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: firstBtnIn 1s cubic-bezier(0.23, 1, 0.32, 1) 1s forwards;
+}
+
+@keyframes firstBtnIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  80% { opacity: 1; transform: translateY(-8px); }
+  100% { opacity: 1; transform: none; }
+}
 .kolase-foto {
   position: relative;
   overflow: hidden;
@@ -184,7 +232,7 @@ a:hover { color: #FF0; }
 .baner-content {
   padding-top: 25vh;
   text-align: center;
-  background-image: url(../img/homefix.jpeg);
+  background-image: url(../img/homefix.jpg);
 }
 
 .baner-content h1 {
@@ -252,6 +300,27 @@ h4, .h4 {
   margin-right: 10px;
   background-color: rgba(0, 0, 0, 0.5)  ;
   padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  position: relative;
+  overflow: hidden;
+  transition: background 0.4s, box-shadow 0.4s, transform 0.3s;
+}
+
+/* Hover effect for .left-text */
+.service-content .left-text:hover {
+  background: linear-gradient(120deg, rgba(175, 140, 42, 0.85) 0%, rgba(0,0,0,0.85) 100%);
+  box-shadow: 0 8px 32px rgba(207,152,0,0.18), 0 2px 24px rgba(0,0,0,0.18);
+  transform: scale(1.01);
+  border: 2px solid #cf9800;
+}
+
+.service-content .left-text:hover span,
+.service-content .left-text:hover p,
+.service-content .left-text:hover ul li {
+  color: #fffbe7 !important;
+  text-shadow: 0 2px 8px rgba(207,152,0,0.18);
+  transition: color 0.5s, text-shadow 0.3s;
 }
 
 .service-content .left-text span {
@@ -289,6 +358,25 @@ h4, .h4 {
   color: #fff;
   margin-bottom: 30px;
   height: 230px;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  position: relative;
+  overflow: hidden;
+  transition: background 0.4s, box-shadow 0.4s, transform 0.3s;
+}
+
+.service-content .service-item:hover {
+  background: linear-gradient(120deg, rgba(207,152,0,0.85) 0%, rgba(0,0,0,0.85) 100%);
+  box-shadow: 0 8px 32px rgba(207,152,0,0.18), 0 2px 24px rgba(0,0,0,0.18);
+  transform: scale(1.03);
+  border: 2px solid #cf9800;
+}
+
+.service-content .service-item:hover,
+.service-content .service-item:hover * {
+  color: #fffbe7 !important;
+  text-shadow: 0 2px 8px rgba(207,152,0,0.18);
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 .service-content .service-item .line-dec {
@@ -302,7 +390,7 @@ h4, .h4 {
 
 .projects-content {
   padding-top: 18vh;
-  background-image: url(../img/portofoliobg2.jpg);
+  background-image: url(../img/slide42.jpg);
 }
 
 .projects-content .item img {
@@ -356,7 +444,7 @@ h4, .h4 {
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 10vh;
-  background-image: url(../img/slide42.jpg);
+  background-image: url(../img/portofoliobg2.jpeg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -398,6 +486,7 @@ h4, .h4 {
   text-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
+
 section {
   background-color: transparent;
   padding-bottom: 15px;
@@ -436,7 +525,7 @@ section {
 }
 
 .tabs .active {
-  border:4px solid #cf9800;
+  border:4px solid #000000;
 }
 
 .tabgroup p {
@@ -450,24 +539,22 @@ section {
   display:table;
   clear:both;
 }
-.baner-content {
-  padding-top: 25vh;
-  text-align: center;
-  background-image: url(../img/homefix.jpeg);
-}
+
 
 .contact-content {
-  min-height: 100vh;
-  padding: 25vh 15px 100px;
-  background-image: url("../img/contactbg2.jpg");
-
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 25vh;
+  background-image: url(../img/contactbg2.jpg);
+  background-size: cover;
+  background-position: center center;
 }
-
 
 .contact-form {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 30px 25px;
   margin-bottom: 30px;
+  border-radius: 12px;
 }
 
 #contact input {
@@ -606,7 +693,7 @@ section {
 .baner-content-prewed {
   padding-top: 15vh;
   text-align: center;
-  background-image: url(../img/wedding/2.jpeg);
+  background-image: url(../img/loccal/13.jpeg);
 }
 
 .baner-content-prewed h1 {
@@ -822,7 +909,7 @@ section {
   color: #000;
 }
 
-/* mobile responsive */
+
 @media (max-width: 767px){
   /* home section */
   .baner-content {
@@ -842,7 +929,7 @@ section {
   }
 
   .baner-content .first-content img {
-    width: 200px;
+    width: 300px;
     height: auto;
   }
 
@@ -886,8 +973,8 @@ section {
 
   /* portofilio section */
   .projects-content {
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     min-height: auto;
 
   }
@@ -968,8 +1055,8 @@ section {
   /* detail services */
   .baner-content-dok-event {
     min-height: auto;
-    padding-top: 0vh;
-    padding-bottom: 1vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
   }
   .baner-content-dok-event .first-content h1{
     font-size: 20px;
@@ -1048,12 +1135,12 @@ section {
 
 
 
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
   .container {
     max-width: 1170px;
   }
   .container .first-content img {
-    width: 250px;
+    width: 300px;
     height: auto; 
   }
   .service-content {
@@ -1074,9 +1161,6 @@ section {
     padding-top: 25vh;
     padding-bottom: 25vh;
     background-size: contain;
-  }
-  .service-content .primary-button{
-    display: none;
   }
   /* detail services */
   .baner-content-dok-event {
